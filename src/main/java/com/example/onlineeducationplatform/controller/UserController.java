@@ -36,5 +36,14 @@ public class UserController {
 
     }
 
+    /**
+     *
+     * 更新用户
+     * @param user
+     */
+    @PostMapping("/user/update")
+    public  void  updateUser(@RequestBody User user){
+        userService.updateUser(user);
+    }
     // 实现其他请求处理方法...
 }
