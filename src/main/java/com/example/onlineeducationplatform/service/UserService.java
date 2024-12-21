@@ -10,5 +10,6 @@ public interface UserService {
      * @param user
      */
     void register(User user);
+    void updateUser(User user);
 }
 
